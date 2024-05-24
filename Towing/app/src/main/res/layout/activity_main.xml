@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/Base.Theme.Towing"
+        app:subtitleTextColor="@color/primary_text"
+        android:background="@color/primary_light"
+        app:titleTextColor="@color/primary_text"
+        app:showAsAction="always"></androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:ems="10"
+        android:textColor="@color/primary_text"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btnUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:backgroundTintMode="screen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow_up_24" />
+
+        <ImageButton
+            android:id="@+id/btnDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="screen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUp"
+            app:layout_constraintVertical_bias="0.355"
+            app:srcCompat="@drawable/arrow_down_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

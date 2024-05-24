@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/btDevice"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:padding="10dp"
+    android:background="#CDD8E1">
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/baseline_bluetooth_24"
+        android:layout_marginRight="10dp"></ImageView>
+
+    <TextView
+        android:id="@+id/txtDeviceName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Device Name"
+        android:textSize="19sp"
+        android:textColor="@color/primary_text"
+        android:paddingTop="4dp"></TextView>
+
+
+</LinearLayout>
